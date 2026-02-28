@@ -23,3 +23,28 @@ match nota:
         print("Invalido")  
 
 #exercicio 3
+pedido = eval(input("Entrada: "))
+match pedido:
+    case {"tipo": "compra", "valor": v}:
+        print(f"Compra de {v}€")
+    case {"tipo": "venda", "valor": v}:
+        print(f"Venda de {v}€")
+    case _:
+        print("Invalido")
+
+# exercicio 4
+valor = eval(input("Digite um valor: "))
+match valor:
+    case int():
+        print("Numero Inteiro")
+    case float():
+        print("Numero Decimal")
+    case str() if valor.isnumeric():
+        print("String numerica")
+    case str():
+        print("String textual")
+    case list():
+        print("Lista")
+    case _:
+        print("Invalido")
+  
