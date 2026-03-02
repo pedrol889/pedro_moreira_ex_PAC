@@ -75,7 +75,7 @@ match server:
 #exercicio 7
 produto = eval(input("\nEntrada: "))
 match produto:
-    case {"categoria": "eletronico", "preço": v} if v >= 1001:
+    case {"categoria": "eletronico", "preço": v} if v > 1000:
         print(f"Produto de luxo")
     case {"categoria": "eletronico", "preço": v} if v <=1000:
         print(f"Produto de comum")
@@ -83,3 +83,53 @@ match produto:
         print(f"Produto alimentar")
     case _:
         print("Categoria desconhecida")
+
+#exercicio 8
+operacao = input("\nOperação: ").lower()
+n1 = int(input("Número 1: "))
+n2 = int(input("Número 2: "))
+
+match operacao:
+    case "soma":
+        print(n1 + n2)
+    case "subtrai":
+        print(n1 - n2)
+    case "multiplica":
+        print(n1 * n2)
+    case "divide":
+        print(n1 / n2)
+    case _:
+        print("Operação inválida")
+
+#exercicio 9
+req = eval(input("\nEntrada: "))
+match req:
+    case {"metodo": "GET", "conteudo": _}:
+        print("Requisição GET recebida")
+    case {"metodo": "POST", "conteudo": c} if c != "":
+        print("Requisição POST com dados válidos")
+    case {"metodo": "POST", "conteudo": ""}:
+        print("Requisição POST sem dados")
+    case _:
+        print("Método não suportado")
+
+# exercicio 10
+j1 = input("\nJogador 1: ").lower()
+j2 = input("\nJogador 2: ").lower()
+match (j1, j2):
+    case ("pedra", "tesoura"):
+        print("Jogador 1 venceu")
+    case ("tesoura", "papel"):
+        print("Jogador 1 venceu")
+    case ("papel", "pedra"):
+        print("Jogador 1 venceu")
+    case ("tesoura", "pedra"):
+        print("Jogador 2 venceu")
+    case ("papel", "tesoura"):
+        print("Jogador 2 venceu")
+    case ("pedra", "papel"):
+        print("Jogador 2 venceu")
+    case (x, y) if x == y:
+        print("Empate")
+    case _:
+        print("Jogada inválida")
