@@ -63,7 +63,7 @@ match opcao:
 #exercicio 6
 server = eval(input("\nEntrada: "))
 match server:
-    case {"status": "ok", "tempo_resposta": v} if v > 200:
+    case {"status": "ok", "tempo_resposta": v} if v >= 200:
         print(f"Servidor lento")
     case {"status": "ok", "tempo_resposta": v}:
         print(f"Servidor ativo")
@@ -71,3 +71,15 @@ match server:
         print(f"Servidor indesponivel")
     case _:
         print("Estado desconhecido")
+
+#exercicio 7
+produto = eval(input("\nEntrada: "))
+match produto:
+    case {"categoria": "eletronico", "preço": v} if v >= 1001:
+        print(f"Produto de luxo")
+    case {"categoria": "eletronico", "preço": v} if v <=1000:
+        print(f"Produto de comum")
+    case {"categoria": "alimento", "preço": v}:
+        print(f"Produto alimentar")
+    case _:
+        print("Categoria desconhecida")
