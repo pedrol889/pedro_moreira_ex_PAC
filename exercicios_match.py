@@ -23,7 +23,7 @@ match nota:
         print("Invalido")  
 
 #exercicio 3
-pedido = eval(input("Entrada: "))
+pedido = eval(input("\nEntrada: "))
 match pedido:
     case {"tipo": "compra", "valor": v}:
         print(f"Compra de {v}€")
@@ -33,7 +33,7 @@ match pedido:
         print("Invalido")
 
 # exercicio 4
-valor = eval(input("Digite um valor: "))
+valor = eval(input("\nDigite um valor: "))
 match valor:
     case int():
         print("Numero Inteiro")
@@ -48,3 +48,26 @@ match valor:
     case _:
         print("Invalido")
   
+#exercicio 5
+opcao = str(input("\nEscreva uma mensagem:"))
+match opcao:
+    case "ola" | "olá" | "bom dia":
+        print("Saudação")
+    case _ if opcao.endswith("?"):
+        print("Pergunta")
+    case "tchau" | "adeus":
+        print("Despedida")
+    case _:
+        print("Mensagem genérica")
+
+#exercicio 6
+server = eval(input("\nEntrada: "))
+match server:
+    case {"status": "ok", "tempo_resposta": v} if v > 200:
+        print(f"Servidor lento")
+    case {"status": "ok", "tempo_resposta": v}:
+        print(f"Servidor ativo")
+    case {"status": "erro", "tempo_resposta": v}:
+        print(f"Servidor indesponivel")
+    case _:
+        print("Estado desconhecido")
