@@ -217,3 +217,215 @@ def bonatchi():
 bonatchi()
 
 #teste_final1
+def eh_primo(num):
+    if num <= 1:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+def contar_divisores(num):
+    contador = 0
+    for i in range(1, num + 1):
+        if num % i == 0:
+            contador += 1
+    return contador
+def eh_perfeito(num):
+    soma = 0
+    for i in range(1, num):
+        if num % i == 0:
+            soma += i
+    return soma == num
+def analisar_numeros():
+    num = int(input("\nDigite um valor entre 1 e 30000: "))
+    while num < 1 or num > 30000:
+        print("Valor inválido.")
+        num = int(input("\nDigite um valor entre 1 e 30000: "))
+    contador = 0
+    for i in range(1, num + 1):
+        print("\nNúmero:", i)
+        if eh_primo(i):
+            print("Primo: Sim")
+        else:
+            print("Primo: Não")
+        print("Quantidade de divisores:", contar_divisores(i))
+        if eh_perfeito(i):
+            print("Número perfeito: Sim")
+        else:
+            print("Número perfeito: Não")
+        contador += 1
+        if contador % 10 == 0:
+            op = input("\nContinuar? (s/n): ")
+            if op.lower() != "s":
+                break
+def calculadora():
+    n1 = float(input("Digite o 1º número: "))
+    while n1 < 1 or n1 > 1000:
+        print("Valor inválido.")
+        n1 = float(input("Digite o 1º número: "))
+    n2 = float(input("Digite o 2º número: "))
+    while n2 < 1 or n2 > 1000:
+        print("Valor inválido.")
+        n2 = float(input("Digite o 2º número: "))
+    op = input("Operação (+, -, *, /): ")
+    if op == "+":
+        print("Resultado:", n1 + n2)
+    elif op == "-":
+        print("Resultado:", n1 - n2)
+    elif op == "*":
+        print("Resultado:", n1 * n2)
+    elif op == "/":
+        if n2 != 0:
+            print("Resultado:", n1 / n2)
+        else:
+            print("Não é possível dividir por zero.")
+    else:
+        print("Operação inválida.")
+def tabuada():
+    num = int(input("Digite o número da tabuada (1 a 1000): "))
+    while num < 1 or num > 1000:
+        print("Valor inválido.")
+        num = int(input("Digite o número da tabuada (1 a 1000): "))
+
+    maximo = int(input("Até onde quer multiplicar? (1 a 1000): "))
+    while maximo < 1 or maximo > 1000:
+        print("Valor inválido.")
+        maximo = int(input("Até onde quer multiplicar? (1 a 1000): "))
+    contador = 0
+    for i in range(1, maximo + 1):
+        print(f"{num} x {i} = {num * i}")
+        contador += 1
+
+        if contador % 20 == 0:
+            op = input("\nContinuar? (s/n): ")
+            if op.lower() != "s":
+                break
+def menu_principal():
+    opcao = ""
+
+    while opcao != "0":
+        print("\n===== MENU =====")
+        print("1 - Analisar números")
+        print("2 - Calculadora")
+        print("3 - Tabuada")
+        print("0 - Sair")
+        opcao = input("Escolha uma opção: ")
+        if opcao == "1":
+            analisar_numeros()
+        elif opcao == "2":
+            calculadora()
+        elif opcao == "3":
+            tabuada()
+        elif opcao == "0":
+            print("Programa terminado.")
+        else:
+            print("Opção inválida.")
+menu_principal()
+
+#teste_final2
+clientes = []
+num_cliente = 1
+
+def calcular_divfin(compra):
+    if compra >= 100 and compra <= 200:
+        desconto = compra * 0.05
+    elif compra > 200 and compra < 500:
+        desconto = compra * 0.10
+    elif compra > 500:
+        desconto = compra * 0.15
+    else:
+        desconto = 0
+    divfin = compra - desconto
+    return divfin
+def inserir_cliente():
+    global num_cliente
+    nome = input("Nome do cliente: ")
+    while nome == "":
+        print("Nome inválido.")
+        nome = input("Nome do cliente: ")
+    morada = input("Morada: ")
+    while morada == "":
+        print("Morada inválida.")
+        morada = input("Morada: ")
+    tel = input("Telefone: ")
+    while not tel.isdigit() or len(tel) < 9:
+        print("Telefone inválido.")
+        tel = input("Telefone: ")
+    nif = input("NIF: ")
+    while not nif.isdigit() or len(nif) != 9:
+        print("NIF inválido.")
+        nif = input("NIF: ")
+    compra = float(input("Valor da compra: "))
+    while compra < 0:
+        print("Compra inválida.")
+        compra = float(input("Valor da compra: "))
+    divfin = calcular_divfin(compra)
+    cliente = {
+        "numcli": num_cliente,
+        "nome": nome,
+        "morada": morada,
+        "tel": tel,
+        "nif": nif,
+        "compra": compra,
+        "divfin": divfin
+    }
+    clientes.append(cliente)
+    print("Cliente inserido com sucesso.")
+    print("Número do cliente:", num_cliente)
+    num_cliente += 1
+def listar_clientes():
+    if len(clientes) == 0:
+        print("Não existem clientes registados.")
+        return
+    for cliente in clientes:
+        print("\n======================")
+        print("Númcli:", cliente["numcli"])
+        print("NomCli:", cliente["nome"])
+        print("Morada:", cliente["morada"])
+        print("Tel:", cliente["tel"])
+        print("NIF:", cliente["nif"])
+        print("Compra:", cliente["compra"])
+        print("Divfin:", cliente["divfin"])
+        op = input("\nContinuar para o próximo cliente? (s/n): ")
+        if op.lower() != "s":
+            break
+def procurar_cliente():
+    if len(clientes) == 0:
+        print("Não existem clientes registados.")
+        return
+    numero = int(input("Digite o número do cliente: "))
+    encontrado = False
+    for cliente in clientes:
+        if cliente["numcli"] == numero:
+            print("\n===== CLIENTE ENCONTRADO =====")
+            print("Númcli:", cliente["numcli"])
+            print("NomCli:", cliente["nome"])
+            print("Morada:", cliente["morada"])
+            print("Tel:", cliente["tel"])
+            print("NIF:", cliente["nif"])
+            print("Compra:", cliente["compra"])
+            print("Divfin:", cliente["divfin"])
+            encontrado = True
+            break
+    if not encontrado:
+        print("Cliente não encontrado.")
+def menu_clientes():
+    opcao = ""
+    while opcao != "0":
+        print("\n===== MENU CLIENTES =====")
+        print("1 - Inserir cliente")
+        print("2 - Listar clientes")
+        print("3 - Procurar cliente por número")
+        print("0 - Sair")
+        opcao = input("Escolha uma opção: ")
+        if opcao == "1":
+            inserir_cliente()
+        elif opcao == "2":
+            listar_clientes()
+        elif opcao == "3":
+            procurar_cliente()
+        elif opcao == "0":
+            print("Programa terminado.")
+        else:
+            print("Opção inválida.")
+menu_clientes()
