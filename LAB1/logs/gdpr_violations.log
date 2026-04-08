@@ -1,0 +1,8 @@
+2026-04-08 15:11:56,252 | WARNING | Utilizador=pedro | Mensagem=pedro4@gamil.com | Dados=email: pedro4@gamil.com
+2026-04-08 15:13:14,321 | WARNING | Utilizador=pedro | Mensagem=o meu ip é 192.168.1.1 | Dados=ip: 192.168.1.1
+2026-04-08 15:13:24,509 | WARNING | Utilizador=pedro | Mensagem=nasci em 23/11/2004 | Dados=data_nascimento: 23/11/2004
+2026-04-08 15:13:34,997 | WARNING | Utilizador=pedro | Mensagem=4111 1111 1111 1111 | Dados=cartao_credito: 4111 1111 1111 1111
+2026-04-08 15:13:45,404 | WARNING | Utilizador=pedro | Mensagem=o meu nome é João Pedro Silva | Dados=nome_completo: João Pedro Silva
+2026-04-08 15:14:00,564 | WARNING | Utilizador=pedro | Mensagem=Olá, sou João Silva e o meu email é joao@gmail.com | Dados=email: joao@gmail.com | nome_completo: João Silva
+2026-04-08 15:19:22,039 | WARNING | Utilizador=peter | Mensagem=peter@gmail.com | Dados=email: peter@gmail.com
+2026-04-08 15:20:49,998 | WARNING | Utilizador=peter | Mensagem=o telefone é 212345678 | Dados=telefone: 212345678

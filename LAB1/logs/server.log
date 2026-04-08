@@ -1,0 +1,25 @@
+2026-04-08 15:11:17,448 | INFO | Servidor iniciado em 127.0.0.1:5000
+2026-04-08 15:11:37,013 | INFO | Cliente ligado: pedro (127.0.0.1:52647)
+2026-04-08 15:11:40,550 | INFO | Mensagem aceite de pedro: ola
+2026-04-08 15:11:47,292 | INFO | Mensagem aceite de pedro: sou o pedro moreira
+2026-04-08 15:11:56,251 | WARNING | Mensagem bloqueada de pedro: pedro4@gamil.com | Dados detetados: email: pedro4@gamil.com
+2026-04-08 15:12:15,079 | INFO | Mensagem aceite de pedro: pass pedroluk1
+2026-04-08 15:13:02,883 | INFO | Mensagem aceite de pedro: liga-me para 912345678
+2026-04-08 15:13:14,321 | WARNING | Mensagem bloqueada de pedro: o meu ip é 192.168.1.1 | Dados detetados: ip: 192.168.1.1
+2026-04-08 15:13:24,505 | WARNING | Mensagem bloqueada de pedro: nasci em 23/11/2004 | Dados detetados: data_nascimento: 23/11/2004
+2026-04-08 15:13:34,997 | WARNING | Mensagem bloqueada de pedro: 4111 1111 1111 1111 | Dados detetados: cartao_credito: 4111 1111 1111 1111
+2026-04-08 15:13:45,403 | WARNING | Mensagem bloqueada de pedro: o meu nome é João Pedro Silva | Dados detetados: nome_completo: João Pedro Silva
+2026-04-08 15:14:00,564 | WARNING | Mensagem bloqueada de pedro: Olá, sou João Silva e o meu email é joao@gmail.com | Dados detetados: email: joao@gmail.com | nome_completo: João Silva
+2026-04-08 15:15:41,573 | INFO | Cliente desligado: pedro (127.0.0.1:52647)
+2026-04-08 15:18:16,276 | INFO | Servidor iniciado em 127.0.0.1:5000
+2026-04-08 15:18:29,629 | INFO | Cliente ligado: peter (127.0.0.1:52744)
+2026-04-08 15:18:31,691 | INFO | Mensagem aceite de peter: ola
+2026-04-08 15:18:49,265 | INFO | Mensagem aceite de peter: liga-me para 912345678
+2026-04-08 15:19:04,240 | INFO | Mensagem aceite de peter: 961234567
+2026-04-08 15:19:22,039 | WARNING | Mensagem bloqueada de peter: peter@gmail.com | Dados detetados: email: peter@gmail.com
+2026-04-08 15:20:16,702 | INFO | Mensagem aceite de peter: o meu número é 912 345 678
+2026-04-08 15:20:30,152 | INFO | Mensagem aceite de peter: 912-345-678
+2026-04-08 15:20:39,827 | INFO | Mensagem aceite de peter: +351 912 345 678
+2026-04-08 15:20:49,998 | WARNING | Mensagem bloqueada de peter: o telefone é 212345678 | Dados detetados: telefone: 212345678
+2026-04-08 15:22:31,312 | INFO | Mensagem aceite de peter: 12345678
+2026-04-08 15:22:41,478 | INFO | Mensagem aceite de peter: 912345678
