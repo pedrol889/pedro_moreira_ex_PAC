@@ -6,3 +6,5 @@
 2026-04-08 15:14:00,564 | WARNING | Utilizador=pedro | Mensagem=Olá, sou João Silva e o meu email é joao@gmail.com | Dados=email: joao@gmail.com | nome_completo: João Silva
 2026-04-08 15:19:22,039 | WARNING | Utilizador=peter | Mensagem=peter@gmail.com | Dados=email: peter@gmail.com
 2026-04-08 15:20:49,998 | WARNING | Utilizador=peter | Mensagem=o telefone é 212345678 | Dados=telefone: 212345678
+2026-04-08 15:23:58,132 | WARNING | Utilizador=pedro | Mensagem=o meu email e calvo@gmail.com | Dados=email: calvo@gmail.com
+2026-04-08 15:24:15,511 | WARNING | Utilizador=pedro | Mensagem=212345678 | Dados=telefone: 212345678

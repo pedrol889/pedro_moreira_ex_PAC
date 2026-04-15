@@ -23,3 +23,13 @@
 2026-04-08 15:20:49,998 | WARNING | Mensagem bloqueada de peter: o telefone é 212345678 | Dados detetados: telefone: 212345678
 2026-04-08 15:22:31,312 | INFO | Mensagem aceite de peter: 12345678
 2026-04-08 15:22:41,478 | INFO | Mensagem aceite de peter: 912345678
+2026-04-08 15:23:12,546 | INFO | Servidor iniciado em 127.0.0.1:5000
+2026-04-08 15:23:34,642 | INFO | Cliente ligado: dinis (127.0.0.1:52808)
+2026-04-08 15:23:37,621 | INFO | Cliente ligado: pedro (127.0.0.1:52809)
+2026-04-08 15:23:44,625 | INFO | Mensagem aceite de dinis: ola
+2026-04-08 15:23:48,469 | INFO | Mensagem aceite de pedro: ola
+2026-04-08 15:23:58,131 | WARNING | Mensagem bloqueada de pedro: o meu email e calvo@gmail.com | Dados detetados: email: calvo@gmail.com
+2026-04-08 15:24:07,445 | INFO | Mensagem aceite de pedro: 912345678
+2026-04-08 15:24:15,511 | WARNING | Mensagem bloqueada de pedro: 212345678 | Dados detetados: telefone: 212345678
+2026-04-08 15:24:25,615 | INFO | Mensagem aceite de pedro: +351 912 345 678
+2026-04-08 15:24:39,030 | INFO | Servidor iniciado em 127.0.0.1:5000
