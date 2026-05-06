@@ -1,0 +1,14 @@
+2026-04-22 14:41:50,083 - ERROR - Não foi possível ler o robots.txt.
+2026-04-22 14:48:15,564 - WARNING - robots.txt não encontrado ou inacessível.
+2026-04-22 14:48:15,564 - INFO - A visitar: https://example.com
+2026-04-22 14:48:17,636 - INFO - Dados guardados em: c:\Users\pedro\Desktop\PAC-EX\pedro_moreira_ex_PAC\LAB2\data\resultados.json
+2026-04-22 14:52:28,918 - WARNING - robots.txt não encontrado ou inacessível.
+2026-04-22 14:52:28,919 - INFO - A visitar: https://books.toscrape.com/
+2026-04-22 14:52:31,915 - INFO - A visitar: https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
+2026-04-22 14:52:34,529 - INFO - A visitar: https://books.toscrape.com/catalogue/category/books/default_15/index.html
+2026-04-22 14:52:37,214 - INFO - A visitar: https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html
+2026-04-22 14:52:39,623 - INFO - A visitar: https://books.toscrape.com/catalogue/category/books_1/index.html
+2026-04-22 14:52:42,245 - INFO - Dados guardados em: c:\Users\pedro\Desktop\PAC-EX\pedro_moreira_ex_PAC\LAB2\data\resultados.json
+2026-04-22 14:54:21,078 - WARNING - robots.txt não encontrado ou inacessível.
+2026-04-22 14:54:21,078 - INFO - A visitar: https://example.com
+2026-04-22 14:54:23,010 - INFO - Dados guardados em: c:\Users\pedro\Desktop\PAC-EX\pedro_moreira_ex_PAC\LAB2\data\resultados.json

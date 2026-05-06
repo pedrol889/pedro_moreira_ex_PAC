@@ -1,0 +1,17 @@
+[
+    {
+        "url": "https://example.com",
+        "titulo": "Example Domain",
+        "links": [
+            "https://iana.org/domains/example"
+        ],
+        "h1": [
+            "Example Domain"
+        ],
+        "h2": [],
+        "paragrafos": [
+            "This domain is for use in documentation examples without needing permission. Avoid use in operations.",
+            "Learn more"
+        ]
+    }
+]
